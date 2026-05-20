@@ -1,0 +1,1136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hawta Maroc24 | كاسكيطات عصرية فالمغرب</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fff7df;--cream2:#fff1b5;--card:#fff;--ink:#13221b;--muted:#667064;--green:#08a85c;--green2:#087344;--amber:#ffd84d;--navy:#17345c;--line:#ecdcae;--shadow:0 18px 45px rgba(23,52,92,.14);--radius:26px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tajawal,Arial,sans-serif;background:radial-gradient(circle at top,#fff1ac 0,#fff9ea 42%,#f7fff9 100%);color:var(--ink);padding-bottom:92px}
+img{display:block;max-width:100%}button,input,select,textarea{font-family:Tajawal,Arial,sans-serif}.wrap{width:min(1120px,92vw);margin:auto}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,250,238,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding:10px 0}.brand{font-weight:900;font-size:23px;color:var(--navy)}.brand span{color:var(--green)}.mini-pill{background:linear-gradient(135deg,var(--green),var(--green2));color:white;padding:9px 13px;border-radius:999px;font-weight:900;font-size:13px}
+.hero{padding:32px 0 18px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.hero-copy{text-align:right}.kicker{display:inline-flex;background:#eafff3;border:1px solid #afe8c9;color:var(--green2);padding:9px 13px;border-radius:999px;font-weight:900;margin-bottom:12px}
+h1{font-size:clamp(36px,6vw,70px);line-height:.98;margin:0 0 13px;color:var(--navy);font-weight:900;letter-spacing:-.04em}.sub{font-size:clamp(18px,2.4vw,25px);line-height:1.55;font-weight:800;color:#34433a;margin:0 0 16px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.badge{background:white;border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-weight:900}
+.btn{border:0;border-radius:18px;padding:14px 18px;font:900 17px Tajawal;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(135deg,var(--green),var(--green2));color:white;box-shadow:0 14px 30px rgba(8,168,92,.28)}.btn-dark{background:linear-gradient(135deg,var(--navy),#315b8c);color:white}
+.hero-card{position:relative;background:linear-gradient(160deg,#fff,#fff6ce);border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:18px;min-height:410px;display:grid;place-items:center;overflow:hidden}.hero-card:before{content:"عرض اليوم";position:absolute;top:16px;right:16px;background:linear-gradient(135deg,#ffb703,var(--amber));padding:9px 13px;border-radius:999px;font-weight:900;z-index:3}.hero-lineup{display:flex;align-items:flex-end;justify-content:center;gap:0;min-height:320px;width:100%;position:relative}.hero-lineup img{width:27%;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(23,52,92,.16));margin-inline:-5%;transition:.25s}.hero-lineup img:nth-child(3){width:35%;z-index:3}.hero-lineup img:hover{transform:translateY(-8px) scale(1.03)}
+.section{padding:24px 0}.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:14px}h2{font-size:clamp(27px,4vw,44px);margin:0;color:var(--navy);font-weight:900}.hint{font-weight:900;color:var(--muted)}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.offer{background:white;border:2px solid transparent;border-radius:28px;padding:12px;box-shadow:0 10px 28px rgba(23,52,92,.08);cursor:pointer;transition:.22s;position:relative;overflow:hidden}.offer:hover,.offer.selected{transform:translateY(-4px);border-color:var(--green);box-shadow:0 18px 38px rgba(8,168,92,.20)}.offer:after{content:"";position:absolute;top:12px;left:12px;background:#fff1b8;border:1px solid #e8ce55;border-radius:999px;padding:6px 9px;font-weight:900;font-size:12px;color:#1e2a18}.offer-img{aspect-ratio:1.2/1;background:#fff8e8;border-radius:21px;display:grid;place-items:center;overflow:hidden}.offer-img img{width:100%;height:100%;object-fit:contain}.offer-stack{display:flex;align-items:center;justify-content:center;gap:0;width:100%;height:100%;flex-wrap:wrap;padding:10px}.offer-stack img{width:28%;margin:-2px -3%;filter:drop-shadow(0 12px 12px rgba(0,0,0,.12))}.offer .big{font-size:22px;font-weight:900;color:var(--navy);margin:9px 0 3px}.offer .small{font-weight:900;color:var(--muted)}.offer .order-now{margin-top:10px;width:100%;border-radius:16px;background:#f0fff7;color:#087344;padding:10px;font-weight:900;text-align:center}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:28px;padding:12px;box-shadow:0 10px 26px rgba(23,52,92,.07);position:relative;overflow:hidden}.product:before{content:attr(data-price);position:absolute;top:14px;right:14px;z-index:3;background:var(--amber);padding:7px 10px;border-radius:999px;font-weight:900}.product.selected{outline:3px solid var(--green)}.prod-img{aspect-ratio:1/1;background:#fff8e8;border:1px solid #f2e6c5;border-radius:23px;display:grid;place-items:center;overflow:hidden;cursor:zoom-in}.prod-img img{width:100%;height:100%;object-fit:contain}.product h3{font-size:21px;margin:12px 0 4px;color:var(--navy);font-weight:900}.product p{margin:0;color:var(--muted);font-weight:900}.pick{width:100%;margin-top:12px}.selected .pick{background:linear-gradient(135deg,var(--green),var(--green2))}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.trust .item{background:white;border:1px solid var(--line);border-radius:22px;padding:15px;text-align:center;font-weight:900;box-shadow:0 8px 22px rgba(23,52,92,.06)}
+.form-box{background:linear-gradient(135deg,#173b61,var(--navy));color:white;border-radius:34px;padding:23px;box-shadow:var(--shadow);display:grid;grid-template-columns:.92fr 1.08fr;gap:20px}.form-box h2{color:white}.form-box p{font-size:18px;line-height:1.7;font-weight:800}.form{background:white;color:#111;border-radius:25px;padding:16px;display:grid;gap:10px}label{font-size:14px;font-weight:900}input,select,textarea{width:100%;border:1px solid #e5e5e5;border-radius:16px;padding:13px;font:700 16px Tajawal;background:#fafafa}.selected-list{background:#f4fff9;border:1px dashed var(--green);border-radius:16px;padding:11px;font-weight:900;color:#087941;min-height:45px}
+.sticky{position:fixed;bottom:0;left:0;right:0;z-index:80;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid #eee;padding:10px 12px}.sticky .wrap{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}.sticky strong{display:block;color:var(--navy)}.sticky span{font-size:13px;color:var(--muted);font-weight:900}
+.lightbox{position:fixed;inset:0;background:rgba(15,23,42,.88);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}.lightbox.open{display:flex}.lightbox img{max-height:86vh;max-width:94vw;object-fit:contain;border-radius:18px;background:white}.close{position:absolute;top:16px;left:16px;background:white;border:0;border-radius:50%;width:44px;height:44px;font-size:24px}
+footer{text-align:center;color:#777;font-weight:800;padding:22px 0 12px}
+@media(max-width:820px){.hero-grid,.form-box{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.offers{grid-template-columns:1fr}.trust{grid-template-columns:repeat(2,1fr)}.hero-card{min-height:340px}}
+@media(max-width:520px){body{padding-bottom:86px}.wrap{width:min(100% - 22px,1120px)}.products{grid-template-columns:1fr}.product{border-radius:22px}.hero{padding-top:18px}h1{font-size:38px}.topbar .wrap{padding:9px 0}.brand{font-size:18px}.mini-pill{font-size:12px;padding:8px 10px}.trust{grid-template-columns:1fr}.sticky .btn{padding:12px 14px;font-size:15px}.hero-lineup img{width:31%;margin-inline:-8%}.hero-lineup img:nth-child(3){width:40%}}
+
+.hero-lineup img.hero-banner-img{
+  width:100% !important;
+  height:100% !important;
+  max-height:360px;
+  object-fit:contain;
+  margin:0 !important;
+  filter:drop-shadow(0 20px 24px rgba(23,52,92,.18));
+}
+@media(max-width:520px){
+  .hero-lineup img.hero-banner-img{width:100% !important;max-height:330px;}
+}
+
+.product,.product .pick,.prod-img,.offer,.offer-img{cursor:pointer!important}
+
+
+
+
+/* ADMIN PANEL FINAL */
+.admin-fab{position:fixed;left:18px;bottom:92px;z-index:99999;width:54px;height:54px;border-radius:999px;border:0;background:#111827;color:#fff;font-size:24px;cursor:pointer;box-shadow:0 14px 35px rgba(0,0,0,.28)}
+.admin-panel{position:fixed;left:16px;top:16px;bottom:16px;z-index:100000;width:min(430px,calc(100vw - 32px));overflow:auto;background:#fff;color:#111;border-radius:22px;padding:18px;box-shadow:0 25px 80px rgba(0,0,0,.35);display:none;direction:rtl;text-align:right}
+.admin-panel.open{display:block}.admin-panel h2{margin:0 0 10px;font-size:24px;color:#17345c}.admin-panel p{font-size:13px;color:#667064;font-weight:800;line-height:1.55}
+.admin-block{border:1px solid #eee;border-radius:16px;padding:12px;margin:10px 0;background:#fffaf0}.admin-panel label{display:block;margin:10px 0 6px;font-weight:900;color:#111}
+.admin-panel input,.admin-panel textarea,.admin-panel select{width:100%;border:1px solid #ddd;border-radius:12px;padding:10px;font:700 14px Tajawal,Arial;background:#fafafa}
+.admin-panel button{border:0;border-radius:12px;padding:12px;font-weight:900;cursor:pointer}.admin-green{background:#08a85c;color:#fff}.admin-red{background:#fee2e2;color:#991b1b}.admin-grey{background:#eee;color:#111}
+.admin-actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;position:sticky;bottom:0;background:#fff;padding-top:12px}
+.admin-preview{width:100%;max-height:130px;object-fit:contain;background:#f7f7f7;border:1px dashed #ddd;border-radius:12px;margin-top:8px}
+
+
+/* FINAL interaction fix: photos zoom, buttons go to form */
+.prod-img,.offer-img{cursor:zoom-in!important}
+.pick,.offer .order-now,.offer button,.btn-select-offer{cursor:pointer!important}
+.lightbox{position:fixed;inset:0;background:rgba(15,23,42,.88);z-index:200000;display:none;align-items:center;justify-content:center;padding:20px}
+.lightbox.open{display:flex}
+.lightbox img{max-height:88vh;max-width:94vw;object-fit:contain;border-radius:18px;background:white}
+.lightbox .close{position:absolute;top:16px;left:16px;background:white;border:0;border-radius:50%;width:44px;height:44px;font-size:24px;cursor:pointer}
+
+
+/* Girl image beside order form */
+.form-girl-visual{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:22px auto 0;
+  padding:0 10px;
+}
+.form-girl-img{
+  width:100%;
+  max-width:420px;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:28px;
+  box-shadow:0 24px 60px rgba(0,0,0,.28);
+  border:4px solid rgba(255,255,255,.18);
+  display:block;
+}
+@media(min-width:900px){
+  #order .form-girl-visual,
+  .checkout-section .form-girl-visual,
+  .order-section .form-girl-visual{
+    margin-top:26px;
+  }
+  .form-girl-img{
+    max-width:460px;
+  }
+}
+@media(max-width:768px){
+  .form-girl-img{
+    max-width:300px;
+    border-radius:22px;
+  }
+}
+
+
+/* Bigger form + side model image */
+.order-grid,
+.checkout-grid,
+.form-layout{
+  align-items:stretch !important;
+}
+
+.order-form,
+.checkout-form,
+.form-card{
+  max-width: 760px !important;
+  width:100% !important;
+  padding:32px !important;
+  border-radius:28px !important;
+}
+
+.form-girl-visual{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:24px;
+}
+
+.form-girl-img{
+  width:100%;
+  max-width:520px;
+  height:auto;
+  object-fit:cover;
+  border-radius:26px;
+  box-shadow:0 20px 60px rgba(0,0,0,.30);
+  border:4px solid rgba(255,255,255,.12);
+}
+
+@media(max-width:768px){
+  .order-form,
+  .checkout-form,
+  .form-card{
+    padding:22px !important;
+  }
+
+  .form-girl-img{
+    max-width:340px;
+    border-radius:20px;
+  }
+}
+
+
+/* Professional girls gallery beside form */
+.form-girl-visual{
+    width:100%;
+    margin-top:24px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.girls-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+    width:100%;
+    max-width:540px;
+}
+
+.form-girl-img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    border-radius:28px;
+    display:block;
+    box-shadow:0 18px 50px rgba(0,0,0,.28);
+    border:4px solid rgba(255,255,255,.14);
+}
+
+.order-form,
+.checkout-form,
+.form-card{
+    max-width:760px !important;
+    width:100% !important;
+    padding:34px !important;
+    border-radius:28px !important;
+}
+
+@media(min-width:1100px){
+    .girls-grid{
+        grid-template-columns:1fr 1fr;
+        max-width:760px;
+    }
+}
+
+@media(max-width:768px){
+    .girls-grid{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+
+    .form-girl-img{
+        border-radius:22px;
+    }
+
+    .order-form,
+    .checkout-form,
+    .form-card{
+        padding:22px !important;
+    }
+}
+
+
+/* Ultra professional visual beside form */
+.form-side-showcase{
+  width:100%;
+  margin-top:22px;
+}
+
+.visual-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  width:100%;
+}
+
+.visual-card{
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 18px 45px rgba(0,0,0,.22);
+  min-height:240px;
+}
+
+.visual-img,
+.visual-video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.order-form,
+.checkout-form,
+.form-card{
+  max-width:850px !important;
+  width:100% !important;
+}
+
+@media(max-width:900px){
+  .visual-grid{
+    grid-template-columns:1fr;
+  }
+
+  .visual-card{
+    min-height:320px;
+  }
+}
+
+
+/* FINAL clean side visuals beside form */
+.form-side-showcase.final-visuals{
+  width:100%;
+  margin-top:24px;
+  padding:0;
+}
+
+.visual-layout-perfect{
+  width:100%;
+  display:grid;
+  grid-template-columns:1.35fr .85fr;
+  gap:18px;
+  align-items:stretch;
+}
+
+.visual-main-card,
+.visual-small-stack{
+  min-height:520px;
+}
+
+.visual-main-card{
+  border-radius:30px;
+  overflow:hidden;
+  background:#0f2547;
+  box-shadow:0 24px 70px rgba(0,0,0,.34);
+  border:4px solid rgba(255,255,255,.16);
+}
+
+.visual-main-img{
+  width:100%;
+  height:100%;
+  min-height:520px;
+  object-fit:cover;
+  object-position:center top;
+  display:block;
+}
+
+.visual-small-stack{
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:18px;
+}
+
+.visual-small-img{
+  width:100%;
+  height:100%;
+  min-height:251px;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  border-radius:26px;
+  box-shadow:0 18px 50px rgba(0,0,0,.26);
+  border:4px solid rgba(255,255,255,.16);
+  background:#fff;
+}
+
+.order-form,
+.checkout-form,
+.form-card{
+  max-width:860px !important;
+  width:100% !important;
+  padding:34px !important;
+  border-radius:28px !important;
+}
+
+@media(max-width:980px){
+  .visual-layout-perfect{
+    grid-template-columns:1fr;
+  }
+  .visual-main-card,
+  .visual-small-stack{
+    min-height:auto;
+  }
+  .visual-main-img{
+    min-height:420px;
+  }
+  .visual-small-stack{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:auto;
+  }
+  .visual-small-img{
+    min-height:240px;
+  }
+}
+
+@media(max-width:640px){
+  .visual-main-img{
+    min-height:360px;
+  }
+  .visual-small-stack{
+    grid-template-columns:1fr;
+  }
+  .visual-small-img{
+    min-height:300px;
+  }
+  .order-form,
+  .checkout-form,
+  .form-card{
+    padding:22px !important;
+  }
+}
+
+</style>
+
+<style>
+.final-visuals{
+margin-top:-40px !important;
+position:relative;
+z-index:3;
+}
+
+.visual-layout-perfect{
+align-items:center !important;
+}
+
+@media(min-width:981px){
+.form-side-showcase.final-visuals{
+display:flex;
+justify-content:center;
+}
+.visual-layout-perfect{
+max-width:980px;
+margin:0 auto;
+}
+}
+</style>
+
+
+<style>
+@media(min-width:981px){
+
+.form-section,
+.order-section,
+.checkout-section{
+display:flex !important;
+align-items:flex-start !important;
+justify-content:center !important;
+gap:28px !important;
+}
+
+.final-visuals{
+margin-top:0px !important;
+display:flex !important;
+align-items:stretch !important;
+height:100% !important;
+}
+
+.visual-layout-perfect{
+display:flex !important;
+flex-direction:column !important;
+justify-content:space-between !important;
+height:100% !important;
+min-height:100% !important;
+}
+
+.visual-main-card{
+height:620px !important;
+}
+
+.visual-main-img{
+height:620px !important;
+object-fit:cover !important;
+object-position:center center !important;
+}
+
+.visual-small-stack{
+display:grid !important;
+grid-template-columns:1fr 1fr !important;
+gap:14px !important;
+margin-top:14px !important;
+}
+
+.visual-small-img{
+height:250px !important;
+object-fit:cover !important;
+}
+
+.order-form,
+.checkout-form,
+.form-card{
+min-height:900px !important;
+display:flex !important;
+flex-direction:column !important;
+justify-content:flex-start !important;
+}
+}
+
+/* mobile */
+@media(max-width:980px){
+.final-visuals{
+margin-top:20px !important;
+}
+.visual-main-img{
+height:420px !important;
+}
+.visual-small-stack{
+grid-template-columns:1fr 1fr !important;
+}
+}
+</style>
+
+</head>
+<body>
+<header class="topbar"><div class="wrap"><div class="brand">Hawta <span>Maroc24</span></div><div class="mini-pill">🚚 توصيل مجاني شامل المغرب</div></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><div class="kicker">🔥 أفضل عرض فالمغرب حالياً</div><h1>اختار الستايل ديالك قبل ما يسالي العرض</h1><p class="sub">كاسكيطات عصرية بثمن قوي، الدفع عند الاستلام + توصيل مجاني لجميع المدن المغربية.</p><div class="badges"><span class="badge">🚚 توصيل مجاني</span><span class="badge">💵 الدفع عند الاستلام</span><span class="badge">🔥 عرض 2 وخود 3</span><span class="badge">🎁 شري 5 و خود 7 غير 595 درهم</span></div><button class="btn btn-primary" onclick="document.getElementById('offers').scrollIntoView({behavior:'smooth'})">شوف العروض</button></div><div class="hero-card"><div class="hero-lineup" id="heroLineup"></div></div></div></section>
+<section class="section" id="offers"><div class="wrap"><div class="section-title"><h2>اختار العرض</h2><div class="hint">كليكي على العرض باش يتعمر فالفورم</div></div><div class="offers" id="offersGrid"></div></div></section>
+<section class="section" id="products"><div class="wrap"><div class="section-title"><h2>اختار الكاسكيت اللي عجباتك</h2><div class="hint">كليكي على الصورة للـ zoom</div></div><div class="products" id="productGrid"></div></div></section>
+<section class="section"><div class="wrap trust"><div class="item">🚚 توصيل مجاني شامل المغرب</div><div class="item">💵 الدفع عند الاستلام</div><div class="item">🔁 تبديل ممكن</div><div class="item">⚡ طلب سريع عبر واتساب</div></div></section>
+<section class="section" id="order"><div class="wrap"><div class="form-box">
+
+<div><h2>كمّل الطلب ديالك دابا</h2><p>اختار العرض والموديلات من الفوق، ومن بعد عمر الفورم. الطلب غادي يمشي مباشرة لواتساب.</p></div><form class="form" id="orderForm"><label>العرض المختار</label><select id="offer"></select><label>الموديلات المختارة</label><div class="selected-list" id="selectedText">مازال ما تختار حتى موديل</div><label>الاسم الكامل</label><input id="name" required placeholder="مثال: Mohamed Chatouan"><label>رقم الهاتف</label><input id="phone" required inputmode="tel" placeholder="06xxxxxxxx"><label>المدينة</label><input id="city" required placeholder="طنجة / كازا / الرباط..."><label>ملاحظة</label><textarea id="note" placeholder="مثلا: بغيت التوصيل فالصباح"></textarea><button class="btn btn-primary" type="submit">تأكيد الطلب عبر واتساب</button></form>
+<div class="form-side-showcase final-visuals">
+  <div class="visual-layout-perfect">
+    <div class="visual-main-card">
+      <img src="assets/clean-man-perfect.jpg" class="visual-main-img" alt="ستايل ديالك كيبان قبل منك">
+    </div>
+
+    <div class="visual-small-stack">
+      <img src="assets/girl-street.png" class="visual-small-img" alt="ستايل كاسكيطة">
+      <img src="assets/girl-mirror.png" class="visual-small-img" alt="ستايل كاسكيطة">
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+</div></div></section>
+</main>
+<footer>Hawta Maroc24 © الدفع عند الاستلام</footer>
+<div class="sticky"><div class="wrap"><div><strong>عرض محدود + توصيل مجاني</strong><span>اختار العرض وكمل الطلب فواتساب</span></div><button class="btn btn-primary" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">اطلب الآن</button></div></div>
+<div class="lightbox" id="lightbox"><button class="close">×</button><img alt="zoom"></div>
+<script>
+
+function goToOrderFormFinal(){
+  const formSection = document.getElementById('order');
+  if(formSection){
+    formSection.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  setTimeout(()=>{
+    const nameInput = document.getElementById('name');
+    if(nameInput) nameInput.focus();
+  },450);
+}
+
+
+function syncSelectedOfferToModels(){
+  const offerSelect = document.getElementById('offer');
+  const selectedText = document.getElementById('selectedText');
+  if(offerSelect && selectedText){
+    selectedText.textContent = offerSelect.options[offerSelect.selectedIndex]?.text || offerSelect.value || '';
+  }
+}
+
+
+function goToOrderForm(){
+  const formSection = document.getElementById('order');
+  if(formSection){
+    formSection.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  setTimeout(function(){
+    const nameInput = document.getElementById('name');
+    if(nameInput){ nameInput.focus(); }
+  }, 500);
+}
+
+const products = [{"id": "p1", "name": "أزرق ملكي أنيق", "color": "أزرق ملكي / ستايل عصري", "price": "DH 119", "imgs": ["cap-blue.png"]}, {"id": "p2", "name": "Patch Mountains كريمي", "color": "كريمي فاتح / بيج طبيعي", "price": "DH 119", "imgs": ["cap-patch.png"]}, {"id": "p3", "name": "رمادي وأسود كلاسيكي", "color": "رمادي فاتح / أسود", "price": "DH 119", "imgs": ["cap-grey.png"]}, {"id": "p4", "name": "Los Angeles Mesh", "color": "أبيض ورمادي / شبكية", "price": "DH 119", "imgs": ["cap-la.png"]}, {"id": "p5", "name": "كاسكيط SWAG شبكية", "color": "أسود / شبكية / فيلكرو", "price": "DH 119", "imgs": ["cap-swag.webp"]}, {"id": "p6", "name": "كاسكيط MZZL شبكية", "color": "أسود / شبكية / فيلكرو", "price": "DH 119", "imgs": ["cap-mzzl.webp"]}, {"id": "p7", "name": "أزرق داكن 08", "color": "كلاسيكي / سمارت كاجوال", "price": "DH 119", "imgs": ["cap-navy08.jpeg"]}, {"id": "p8", "name": "ACT أزرق داكن", "color": "أزرق داكن / ستايل نقي", "price": "DH 119", "imgs": ["cap-act-navy.png"]}, {"id": "p9", "name": "NY أخضر شبكي", "color": "أخضر زيتوني / شبكية", "price": "DH 119", "imgs": ["cap-ny-olive.png"]}, {"id": "p10", "name": "Outdoor بيج", "color": "بيج طبيعي / باتش جلدي", "price": "DH 119", "imgs": ["cap-outdoor-beige.png"]}, {"id": "p11", "name": "City Green", "color": "أخضر عسكري / ستايل هادئ", "price": "DH 119", "imgs": ["cap-city-olive.png"]}, {"id": "p12", "name": "Camo Black", "color": "أسود كامو / ستايل قوي", "price": "DH 119", "imgs": ["cap-camo-black.png"]}];
+const offers = [{"id": "single", "big": "1 كاسكيت = 119 DH", "small": "اختار موديل واحد", "value": "1 كاسكيت - 119 درهم", "img": "cap-blue.png"}, {"id": "buy2", "big": "شري 2 وخود 3 = 238 DH", "small": "الثالثة هدية + توصيل مجاني", "value": "شري 2 وخود 3 - 238 درهم", "img": "offer-buy2-get3-238.png"}, {"id": "buy5", "big": "شري 5 و خود 7 غير 595 درهم", "small": "أفضل عرض: 2 فابور + توصيل مجاني", "value": "شري 5 و خود 7 غير 595 درهم", "img": "offer-7caps.png"}];
+const whatsapp = "491775949457";
+const selected = new Set();
+const $ = id => document.getElementById(id);
+const asset = v => !v ? "" : (v.startsWith("data:") || v.startsWith("http") || v.startsWith("assets/") ? v : "assets/" + v);
+
+function renderHero(){
+  const hero = document.getElementById("heroLineup");
+  if(hero){
+    hero.innerHTML = `<img class="hero-banner-img" src="assets/best-deal-7caps-landing.png" alt="عرض شري 5 و خود 7 غير 595 درهم">`;
+    hero.onclick = goToOrderForm;
+    hero.style.cursor = "pointer";
+  }
+}
+
+function offerImage(o){
+  if(o.id === "buy5"){
+    return `<img src="assets/best-deal-7caps-landing.png" alt="${o.big}">`;
+  }
+  return `<img src="${asset(o.img)}" alt="${o.big}">`;
+}
+
+function renderOffers(){
+  $("offersGrid").innerHTML = offers.map((o,i)=>`
+    <article class="offer" data-i="${i}">
+      <div class="offer-img">${offerImage(o)}</div>
+      <div class="big">${o.big}</div>
+      <div class="small">${o.small}</div>
+      <div class="order-now">اختار هاد العرض</div>
+    </article>
+  `).join("");
+  $("offer").innerHTML = offers.map(o=>`<option value="${o.value}">${o.value}</option>`).join("");
+}
+
+function renderProducts(){
+  $("productGrid").innerHTML = products.map(p=>`
+    <article class="product ${selected.has(p.id) ? "selected" : ""}" data-id="${p.id}" data-price="${p.price}">
+      <div class="prod-img" data-zoom="${asset(p.imgs[0])}"><img src="${asset(p.imgs[0])}" alt="${p.name}"></div>
+      <h3>${p.name}</h3>
+      <p>${p.color} • ${p.price}</p>
+      <button class="btn btn-dark pick">${selected.has(p.id) ? "✓ مختار" : "اختار هاد الموديل"}</button>
+    </article>
+  `).join("");
+  updateSelected();
+}
+
+function updateSelected(){
+  const names=config.products.filter(p=>selected.has(p.id)).map(p=>p.name);
+  if(names.length){
+    $('selectedText').textContent=names.join('، ');
+  }else{
+    syncSelectedOfferToModels();
+  }
+  document.querySelectorAll('.product').forEach(c=>{
+    c.classList.toggle('selected',selected.has(c.dataset.id));
+    const b=c.querySelector('.pick');
+    if(b)b.textContent=selected.has(c.dataset.id)?'✓ مختار':'اختار هاد الموديل';
+  });
+}
+
+function chooseOffer(i){
+  const offerSelect = document.getElementById("offer");
+  if(offerSelect) offerSelect.selectedIndex = i;
+
+  document.querySelectorAll(".offer").forEach(x=>x.classList.remove("selected"));
+  const card = document.querySelector(`.offer[data-i="${i}"]`);
+  if(card) card.classList.add("selected");
+
+  syncSelectedOfferToModels();
+  if(typeof goToOrderForm === "function"){ goToOrderForm(); }
+  else {
+    const formSection = document.getElementById("order");
+    if(formSection) formSection.scrollIntoView({behavior:"smooth", block:"start"});
+  }
+}
+
+$("offersGrid").addEventListener("click", e=>{
+  const card = e.target.closest(".offer");
+  if(!card) return;
+  chooseOffer(+card.dataset.i);
+});
+
+$("productGrid").addEventListener("click", e=>{
+  const zoom = e.target.closest(".prod-img");
+  if(zoom){
+    $("lightbox").querySelector("img").src = zoom.dataset.zoom;
+    $("lightbox").classList.add("open");
+    return;
+  }
+  const btn = e.target.closest(".pick");
+  if(btn){
+    const id = btn.closest(".product").dataset.id;
+    selected.has(id) ? selected.delete(id) : selected.add(id);
+    updateSelected();
+    $("order").scrollIntoView({behavior:"smooth"});
+  }
+});
+
+$("lightbox").addEventListener("click", e=>{
+  if(e.target.id === "lightbox" || e.target.className === "close") $("lightbox").classList.remove("open");
+});
+
+$("orderForm").addEventListener("submit", e=>{
+  e.preventDefault();
+  const names = products.filter(p=>selected.has(p.id)).map(p=>p.name);
+  const msg = `📦 طلب جديد - Hawta Maroc24\n\n🔥 العرض المختار: ${$("offer").value}\n🧢 الموديلات: ${names.length ? names.join("، ") : "مازال ما تحددش"}\n\n👤 الاسم: ${$("name").value}\n📞 الهاتف: ${$("phone").value}\n📍 المدينة: ${$("city").value}\n\n🚚 الدفع عند الاستلام + توصيل مجاني\n\n📝 ملاحظة: ${$("note").value || "-"}`;
+  const waUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(msg)}`;
+  const opened = window.open(waUrl, "_blank");
+  if(!opened){ window.location.href = waUrl; }
+});
+
+renderHero();
+renderOffers();
+renderProducts();
+
+document.addEventListener('DOMContentLoaded', function(){
+  const offerSelectSyncListenerFinal = document.getElementById('offer');
+  if(offerSelectSyncListenerFinal){
+    offerSelectSyncListenerFinal.addEventListener('change', syncSelectedOfferToModels);
+    setTimeout(syncSelectedOfferToModels, 300);
+  }
+});
+
+</script>
+
+
+
+
+
+
+
+<button class="admin-fab" id="adminFab" type="button" onclick="window.hawtaOpenAdmin && window.hawtaOpenAdmin()">⚙️</button>
+<div class="admin-panel" id="adminPanel">
+  <h2>لوحة التحكم</h2>
+  <p>بدل النصوص والصور. الحفظ كيبقى بعد Refresh فهاد المتصفح.</p>
+
+  <div class="admin-block">
+    <label>عنوان Hero</label><textarea id="admHeroTitle" rows="2"></textarea>
+    <label>وصف Hero</label><textarea id="admHeroSub" rows="3"></textarea>
+    <label>نص الشريط الأخضر</label><input id="admTopBadge">
+    <label>عنوان العروض</label><input id="admOffersTitle">
+    <label>عنوان المنتجات</label><input id="admProductsTitle">
+    <button type="button" class="admin-green" id="admSaveTexts" style="width:100%;margin-top:10px">حفظ النصوص</button>
+  </div>
+
+  <div class="admin-block">
+    <label>اختار الصورة اللي بغيتي تبدل</label>
+    <select id="admImageTarget"></select>
+    <img id="admPreview" class="admin-preview" alt="">
+    <label>رفع صورة جديدة</label>
+    <input id="admImageFile" type="file" accept="image/*">
+    <button type="button" class="admin-green" id="admSaveImage" style="width:100%;margin-top:10px;pointer-events:auto;cursor:pointer">حفظ الصورة</button><div id="admStatus" style="margin-top:8px;font-weight:900;color:#087344"></div>
+  </div>
+
+  <div class="admin-actions">
+    <button type="button" class="admin-red" id="admReset" type="button">رجوع للأصل</button>
+    <button type="button" class="admin-grey" id="admClearImg">مسح صورة مختارة</button>
+    <button type="button" class="admin-grey" id="admClose" type="button">إغلاق</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script id="final-zoom-and-button-form-fix">
+(function(){
+  function q(s,r=document){ return r.querySelector(s); }
+  function qa(s,r=document){ return Array.from(r.querySelectorAll(s)); }
+
+  function openZoom(src){
+    if(!src) return;
+    const lb = document.getElementById('lightbox');
+    if(!lb) return;
+    const img = lb.querySelector('img');
+    if(img) img.src = src;
+    lb.classList.add('open');
+  }
+
+  function closeZoom(){
+    const lb = document.getElementById('lightbox');
+    if(lb) lb.classList.remove('open');
+  }
+
+  function goForm(){
+    if(typeof goToOrderFormFinal === 'function') goToOrderFormFinal();
+    else {
+      const form = document.getElementById('order');
+      if(form) form.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }
+
+  function selectOffer(card){
+    if(!card) return;
+    const idx = Number(card.getAttribute('data-i') || 0);
+    const offerSelect = document.getElementById('offer');
+    if(offerSelect && offerSelect.options.length){
+      offerSelect.selectedIndex = Math.max(0, Math.min(idx, offerSelect.options.length - 1));
+    }
+    document.querySelectorAll('.offer').forEach(c=>c.classList.remove('selected'));
+    card.classList.add('selected');
+
+    const selectedText = document.getElementById('selectedText');
+    if(selectedText && offerSelect && offerSelect.options.length){
+      selectedText.textContent = offerSelect.options[offerSelect.selectedIndex].text || offerSelect.value;
+    }
+    goForm();
+  }
+
+  function selectProduct(card){
+    if(!card) return;
+    const id = card.getAttribute('data-id') || '';
+    const name = card.querySelector('h3') ? card.querySelector('h3').textContent.trim() : 'موديل مختار';
+
+    try{
+      if(window.selected && typeof window.selected.add === 'function' && id){
+        window.selected.add(id);
+      }
+    }catch(e){}
+
+    document.querySelectorAll('.product').forEach(c=>c.classList.remove('selected'));
+    card.classList.add('selected');
+
+    const btn = card.querySelector('.pick');
+    if(btn) btn.textContent = '✓ مختار';
+
+    const selectedText = document.getElementById('selectedText');
+    if(selectedText) selectedText.textContent = name;
+
+    goForm();
+  }
+
+  function install(){
+    // Images: zoom only
+    qa('.prod-img, .offer-img').forEach(box=>{
+      box.style.cursor = 'zoom-in';
+    });
+
+    // Buttons: go to form
+    qa('.pick, .offer .order-now, .offer button').forEach(btn=>{
+      btn.style.cursor = 'pointer';
+    });
+  }
+
+  document.addEventListener('click', function(e){
+    // close lightbox
+    if(e.target.closest && (e.target.closest('#lightbox .close') || e.target.id === 'lightbox')){
+      e.preventDefault();
+      e.stopPropagation();
+      closeZoom();
+      return;
+    }
+
+    // product image => zoom
+    const prodImgBox = e.target.closest && e.target.closest('.prod-img');
+    if(prodImgBox){
+      e.preventDefault();
+      e.stopPropagation();
+      const img = prodImgBox.querySelector('img');
+      openZoom(img ? img.src : prodImgBox.getAttribute('data-zoom'));
+      return;
+    }
+
+    // offer image => zoom
+    const offerImgBox = e.target.closest && e.target.closest('.offer-img');
+    if(offerImgBox){
+      e.preventDefault();
+      e.stopPropagation();
+      const img = offerImgBox.querySelector('img');
+      openZoom(img ? img.src : '');
+      return;
+    }
+
+    // product button only => form
+    const pickBtn = e.target.closest && e.target.closest('.pick');
+    if(pickBtn){
+      e.preventDefault();
+      e.stopPropagation();
+      selectProduct(pickBtn.closest('.product'));
+      return;
+    }
+
+    // offer button only => form
+    const offerBtn = e.target.closest && e.target.closest('.offer .order-now, .offer button');
+    if(offerBtn){
+      e.preventDefault();
+      e.stopPropagation();
+      selectOffer(offerBtn.closest('.offer'));
+      return;
+    }
+  }, true);
+
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install);
+  else install();
+  setTimeout(install, 500);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script id="hawta-admin-client-verified">
+(function(){
+  const STORAGE_KEY = "hawta_admin_compressed_images_v1";
+  const MAX_SIZE = 1100;
+  const QUALITY = 0.78;
+
+  function byId(id){ return document.getElementById(id); }
+  function qsa(sel){ return Array.prototype.slice.call(document.querySelectorAll(sel)); }
+  function status(msg, color){
+    const s = byId("admStatus");
+    if(s){ s.textContent = msg; s.style.color = color || "#087344"; }
+  }
+
+  function load(){
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch(e){ return {}; }
+  }
+
+  function save(data){
+    try{
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      return true;
+    }catch(e){
+      status("الصورة كبيرة بزاف. جرّب صورة أخف.", "#b42318");
+      alert("الصورة كبيرة بزاف وما قدرش المتصفح يحفظها. جرّب صورة أخف.");
+      return false;
+    }
+  }
+
+  function collectTargets(){
+    const list = [];
+
+    const hero = document.querySelector(".hero-card img, .hero-lineup img");
+    if(hero){
+      hero.dataset.hawtaTarget = "hero";
+      list.push({key:"hero", label:"صورة Hero الرئيسية", img:hero});
+    }
+
+    qsa(".offer img").forEach(function(img, i){
+      img.dataset.hawtaTarget = "offer_" + i;
+      list.push({key:"offer_" + i, label:"صورة العرض " + (i+1), img:img});
+    });
+
+    qsa(".product img").forEach(function(img, i){
+      img.dataset.hawtaTarget = "product_" + i;
+      const card = img.closest ? img.closest(".product") : null;
+      const name = card && card.querySelector("h3") ? card.querySelector("h3").textContent.trim() : "صورة المنتج " + (i+1);
+      list.push({key:"product_" + i, label:name, img:img});
+    });
+
+    return list;
+  }
+
+  function fillSelect(){
+    const select = byId("admImageTarget");
+    if(!select) return;
+
+    const old = select.value;
+    const targets = collectTargets();
+
+    select.innerHTML = targets.map(function(t){
+      return '<option value="' + t.key + '">' + t.label + '</option>';
+    }).join("");
+
+    if(old && targets.some(function(t){ return t.key === old; })){
+      select.value = old;
+    }
+
+    updatePreview();
+  }
+
+  function updatePreview(){
+    const select = byId("admImageTarget");
+    const preview = byId("admPreview");
+    if(!select || !preview) return;
+
+    const img = document.querySelector('[data-hawta-target="' + select.value + '"]');
+    if(img) preview.src = img.src;
+  }
+
+  function applySaved(){
+    const data = load();
+    collectTargets();
+
+    if(!data.images) return;
+
+    Object.keys(data.images).forEach(function(key){
+      const img = document.querySelector('[data-hawta-target="' + key + '"]');
+      if(img && data.images[key]){
+        img.src = data.images[key];
+        img.removeAttribute("srcset");
+      }
+    });
+  }
+
+  function compressImage(file){
+    return new Promise(function(resolve, reject){
+      const reader = new FileReader();
+
+      reader.onload = function(e){
+        const img = new Image();
+
+        img.onload = function(){
+          let w = img.width;
+          let h = img.height;
+          const scale = Math.min(1, MAX_SIZE / Math.max(w, h));
+          w = Math.round(w * scale);
+          h = Math.round(h * scale);
+
+          const canvas = document.createElement("canvas");
+          canvas.width = w;
+          canvas.height = h;
+
+          const ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#ffffff";
+          ctx.fillRect(0, 0, w, h);
+          ctx.drawImage(img, 0, 0, w, h);
+
+          let dataUrl;
+          try{
+            dataUrl = canvas.toDataURL("image/webp", QUALITY);
+          }catch(err){
+            dataUrl = canvas.toDataURL("image/jpeg", QUALITY);
+          }
+
+          resolve(dataUrl);
+        };
+
+        img.onerror = reject;
+        img.src = e.target.result;
+      };
+
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
+  async function saveImageNow(ev){
+    if(ev){
+      ev.preventDefault();
+      ev.stopPropagation();
+    }
+
+    const input = byId("admImageFile");
+    const select = byId("admImageTarget");
+
+    if(!input || !select){
+      alert("مشكل فلوحة التحكم: input/select ما لقيتهمش");
+      return false;
+    }
+
+    const file = input.files && input.files[0];
+    const key = select.value;
+
+    if(!file){
+      status("اختار صورة أولاً", "#b42318");
+      alert("اختار صورة أولاً");
+      return false;
+    }
+
+    if(!key){
+      status("اختار بلاصة الصورة أولاً", "#b42318");
+      alert("اختار بلاصة الصورة أولاً");
+      return false;
+    }
+
+    status("جاري حفظ الصورة...", "#17345c");
+
+    try{
+      const imageData = await compressImage(file);
+
+      const data = load();
+      data.images = data.images || {};
+      data.images[key] = imageData;
+
+      if(!save(data)) return false;
+
+      collectTargets();
+      const target = document.querySelector('[data-hawta-target="' + key + '"]');
+
+      if(target){
+        target.src = imageData;
+        target.removeAttribute("srcset");
+      }
+
+      input.value = "";
+      applySaved();
+      updatePreview();
+
+      status("الصورة تبدلات وتحفظات ✅", "#087344");
+      alert("الصورة تبدلات وتحفظات ✅");
+    }catch(e){
+      status("وقع مشكل فقراءة الصورة", "#b42318");
+      alert("وقع مشكل فقراءة الصورة. جرّب صورة أخرى.");
+    }
+
+    return false;
+  }
+
+  function openPanel(){
+    const panel = byId("adminPanel");
+    if(panel){
+      fillSelect();
+      applySaved();
+      panel.classList.add("open");
+    }
+  }
+
+  function closePanel(){
+    const panel = byId("adminPanel");
+    if(panel) panel.classList.remove("open");
+  }
+
+  function install(){
+    applySaved();
+    fillSelect();
+
+    const saveBtn = byId("admSaveImage");
+    if(saveBtn){
+      saveBtn.type = "button";
+      saveBtn.onclick = saveImageNow;
+      saveBtn.addEventListener("click", saveImageNow, true);
+      saveBtn.style.pointerEvents = "auto";
+      saveBtn.style.cursor = "pointer";
+    }
+
+    const fab = byId("adminFab");
+    if(fab){
+      fab.type = "button";
+      fab.onclick = openPanel;
+    }
+
+    const close = byId("admClose");
+    if(close){
+      close.type = "button";
+      close.onclick = closePanel;
+    }
+
+    const select = byId("admImageTarget");
+    if(select){
+      select.onchange = updatePreview;
+    }
+
+    // direct delegated backup
+    document.addEventListener("click", function(e){
+      if(e.target && e.target.id === "admSaveImage"){
+        saveImageNow(e);
+      }
+    }, true);
+
+    // re-apply after page scripts render
+    setTimeout(function(){ applySaved(); fillSelect(); }, 300);
+    setTimeout(function(){ applySaved(); fillSelect(); }, 1000);
+  }
+
+  window.hawtaSaveImageNow = saveImageNow;
+  window.hawtaOpenAdmin = openPanel;
+
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", install);
+  }else{
+    install();
+  }
+})();
+</script>
+
+
+<script id="hawta-hide-admin">
+(function(){
+  const isAdmin = window.location.search.includes("admin=1");
+
+  function applyAdminVisibility(){
+    const fab = document.getElementById("adminFab");
+    const panel = document.getElementById("adminPanel");
+
+    if(!isAdmin){
+      if(fab) fab.style.display = "none";
+      if(panel) panel.style.display = "none";
+    }else{
+      if(fab) fab.style.display = "flex";
+    }
+  }
+
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", applyAdminVisibility);
+  }else{
+    applyAdminVisibility();
+  }
+
+  setTimeout(applyAdminVisibility, 300);
+})();
+</script>
+
+</body>
+</html>
