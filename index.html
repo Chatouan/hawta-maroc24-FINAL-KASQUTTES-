@@ -473,12 +473,12 @@ grid-template-columns:1fr 1fr !important;
 <div class="form-side-showcase final-visuals">
   <div class="visual-layout-perfect">
     <div class="visual-main-card">
-      <img src="assets/clean-man-perfect.jpg" class="visual-main-img" alt="ستايل ديالك كيبان قبل منك">
+      <img src="./assets/clean-man-perfect.jpg" class="visual-main-img" alt="ستايل ديالك كيبان قبل منك">
     </div>
 
     <div class="visual-small-stack">
-      <img src="assets/girl-street.png" class="visual-small-img" alt="ستايل كاسكيطة">
-      <img src="assets/girl-mirror.png" class="visual-small-img" alt="ستايل كاسكيطة">
+      <img src="./assets/girl-street.png" class="visual-small-img" alt="ستايل كاسكيطة">
+      <img src="./assets/girl-mirror.png" class="visual-small-img" alt="ستايل كاسكيطة">
     </div>
   </div>
 </div>
@@ -532,12 +532,12 @@ const offers = [{"id": "single", "big": "1 كاسكيت = 119 DH", "small": "ا�
 const whatsapp = "491775949457";
 const selected = new Set();
 const $ = id => document.getElementById(id);
-const asset = v => !v ? "" : (v.startsWith("data:") || v.startsWith("http") || v.startsWith("assets/") ? v : "assets/" + v);
+const asset = v => !v ? "" : (v.startsWith("data:") || v.startsWith("http") || v.startsWith("./assets/") || v.startsWith("assets/") ? v.replace(/^assets\//,"./assets/") : "./assets/" + v);
 
 function renderHero(){
   const hero = document.getElementById("heroLineup");
   if(hero){
-    hero.innerHTML = `<img class="hero-banner-img" src="assets/best-deal-7caps-landing.png" alt="عرض شري 5 و خود 7 غير 595 درهم">`;
+    hero.innerHTML = `<img class="hero-banner-img" src="./assets/best-deal-7caps-landing.png" alt="عرض شري 5 و خود 7 غير 595 درهم">`;
     hero.onclick = goToOrderForm;
     hero.style.cursor = "pointer";
   }
@@ -545,7 +545,7 @@ function renderHero(){
 
 function offerImage(o){
   if(o.id === "buy5"){
-    return `<img src="assets/best-deal-7caps-landing.png" alt="${o.big}">`;
+    return `<img src="./assets/best-deal-7caps-landing.png" alt="${o.big}">`;
   }
   return `<img src="${asset(o.img)}" alt="${o.big}">`;
 }
