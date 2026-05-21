@@ -578,6 +578,36 @@ updateTimer();
 }
 </style>
 
+
+<style id="old-price-269-verified-css">
+.product .price-line{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:9px !important;
+  flex-wrap:wrap !important;
+  direction:ltr !important;
+}
+.product .new-price{
+  color:#667064 !important;
+  font-weight:900 !important;
+}
+.product .old-price{
+  color:#555 !important;
+  font-size:18px !important;
+  font-weight:900 !important;
+  text-decoration:line-through !important;
+  text-decoration-thickness:3px !important;
+  text-decoration-color:#d71920 !important;
+  transform:rotate(-4deg);
+  opacity:.95;
+}
+@media(max-width:640px){
+  .product .old-price{font-size:16px !important;}
+  .product .price-line{gap:7px !important;}
+}
+</style>
+
 </head>
 <body>
 <header class="topbar"><div class="wrap"><div class="brand">Hawta <span>Maroc24</span></div><div class="mini-pill">🚚 توصيل مجاني شامل المغرب</div></div></header>
@@ -1283,6 +1313,31 @@ document.addEventListener('DOMContentLoaded', function(){
   if(document.readyState === "loading"){ document.addEventListener("DOMContentLoaded", install); }
   else { install(); }
   setTimeout(install, 500);
+})();
+</script>
+
+
+<script id="old-price-269-verified-js">
+(function(){
+  function addOldPrice(){
+    document.querySelectorAll('.product').forEach(function(card){
+      var ps = card.querySelectorAll('p');
+      ps.forEach(function(p){
+        if((p.textContent || '').includes('DH 119') && !p.querySelector('.old-price')){
+          var text = p.textContent.trim();
+          p.innerHTML = text.replace(/DH\s*119/i, '<span class="new-price">DH 119</span>') + ' <span class="old-price">269dh</span>';
+          p.classList.add('price-line');
+        }
+      });
+    });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', addOldPrice);
+  }else{
+    addOldPrice();
+  }
+  setTimeout(addOldPrice, 300);
+  setTimeout(addOldPrice, 1000);
 })();
 </script>
 
